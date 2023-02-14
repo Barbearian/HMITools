@@ -13,6 +13,7 @@ namespace Bear
         [ConsoleMethod("SendData", "Try to Connect with url and ip")]
         public static void SendData(byte[] data)
         {
+            data = new byte[] { 0,0,0,0,0,0,0,0,0,0,0,0,0 };
             CanClient.Instance.SendData(data);
             //Debug.Log(data[0]);
         }
