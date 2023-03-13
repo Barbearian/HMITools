@@ -16,6 +16,7 @@ namespace Bear
         public bool Connected;
         private Socket socket;
         private Task readingTask;
+        
 
         private static CanClient _instance;
         private byte[] buffer = new byte[13];
@@ -94,7 +95,7 @@ namespace Bear
             }
             Debug.Log(sb);
 
-           // socket.Send(data);
+        //    socket.Send(data);
         }
 
         public void Connect(string url, int port)
